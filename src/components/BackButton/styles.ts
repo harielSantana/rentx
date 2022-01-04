@@ -1,6 +1,4 @@
 import styled from "styled-components/native";
-import { TouchableOpacity } from "react-native";
+import { BorderlessButton } from "react-native-gesture-handler";
 
-export const Container = styled(TouchableOpacity)`
-  flex: 1;
-`;
+export const Container = styled(BorderlessButton)``;

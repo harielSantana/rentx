@@ -33,7 +33,7 @@ export const CarList = styled(FlatList).attrs({
   contentContainerStyle: {
     padding: 24,
   },
-  showHorizontalScrollIndicator: false,
+  showsHorizontalScrollIndicator: false,
 })`
   font-size: ${RFValue(15)}px;
   color: ${({ theme }) => theme.colors.text};
