@@ -6,8 +6,6 @@ import {
 } from "react-native-calendars";
 import { useTheme } from "styled-components/native";
 
-import { Container } from "./styles";
-
 LocaleConfig.locales["pt-br"] = {
   monthNames: [
     "Janeiro",
@@ -47,7 +45,6 @@ LocaleConfig.locales["pt-br"] = {
     "Sábado",
   ],
   dayNamesShort: ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SAB"],
-  today: "Hoje",
 };
 
 LocaleConfig.defaultLocale = "pt-br";
