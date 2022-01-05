@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { StatusBar } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
@@ -8,6 +9,8 @@ import { Car } from "../../components/Car";
 import { CarList, Container, Header, HeaderContent, TotalCars } from "./styles";
 
 export function Home() {
+  const navigation = useNavigation();
+
   const carData = {
     brand: "Audi",
     name: "RS 5 Coupé",
@@ -29,6 +32,11 @@ export function Home() {
     thumbnail:
       "https://static.wikia.nocookie.net/forzamotorsport/images/e/e6/HOR_XB1_Ferrari_F40_89.png",
   };
+
+  function handleConfirmRental() {
+    navigation.navigate("CarDetails");
+  }
+
   return (
     <Container>
       <StatusBar
@@ -46,7 +54,9 @@ export function Home() {
       <CarList
         data={[1, 2, 3, 4, 5, 6, 7]}
         keyExtractor={(item) => String(item)}
-        renderItem={({ item }) => <Car data={carData} />}
+        renderItem={({ item }) => (
+          <Car data={carData} onPress={handleConfirmRental} />
+        )}
       />
     </Container>
   );
