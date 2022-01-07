@@ -59,7 +59,7 @@ export function SchedulingDetails() {
   return (
     <Container>
       <Header>
-        <BackButton onPress={() => handleBack()} />
+        <BackButton onPress={handleBack} />
       </Header>
 
       <CarImages>
