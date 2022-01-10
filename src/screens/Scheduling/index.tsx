@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { format } from "date-fns/esm";
-import { Alert, StatusBar } from "react-native";
+import { StatusBar } from "react-native";
 import { useTheme } from "styled-components";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
