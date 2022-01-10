@@ -10,7 +10,6 @@ import { useNavigation } from "@react-navigation/native";
 
 export function SchedulingComplete() {
   const { width } = useWindowDimensions();
-
   const navigation = useNavigation();
 
   function handleConfirmRental() {

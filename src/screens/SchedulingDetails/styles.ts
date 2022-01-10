@@ -76,7 +76,7 @@ export const Price = styled.Text`
   font-size: ${RFValue(25)}px;
 `;
 
-export const Acessories = styled.View`
+export const Accessories = styled.View`
   color: ${({ theme }) => theme.colors.shape};
 
   flex-direction: row;

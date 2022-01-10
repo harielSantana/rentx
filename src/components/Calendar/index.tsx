@@ -3,8 +3,8 @@ import { Feather } from "@expo/vector-icons";
 import { useTheme } from "styled-components/native";
 import {
   Calendar as CustomCalendar,
-  DateCallbackHandler,
   LocaleConfig,
+  DateData,
 } from "react-native-calendars";
 
 import { ptBR } from "./localeConfig";
@@ -33,7 +33,7 @@ interface DayProps {
 
 interface CalendarProps {
   markedDates: MarkedDateProps;
-  onDayPress: DateCallbackHandler;
+  onDayPress: (date: DateData) => void;
 }
 
 function Calendar({ markedDates, onDayPress }: CalendarProps) {
@@ -68,7 +68,7 @@ function Calendar({ markedDates, onDayPress }: CalendarProps) {
         },
       }}
       firstDay={1}
-      minDate={new Date()}
+      minDate={String(new Date())}
       markingType="period"
       markedDates={markedDates}
       onDayPress={onDayPress}
