@@ -20,6 +20,7 @@ import {
 } from "./styles";
 import { Load } from "../../components/Load";
 import { useTheme } from "styled-components";
+import { RectButtonProps } from "react-native-gesture-handler";
 
 export function Home() {
   const [cars, setCars] = useState<CarDTO[]>([]);
@@ -60,7 +61,7 @@ export function Home() {
       <Header>
         <HeaderContent>
           <Logo width={RFValue(100)} height={RFValue(12)} />
-          <TotalCars>Total de 12 carros</TotalCars>
+          <TotalCars>{`Total de ${cars.length} carros`}</TotalCars>
         </HeaderContent>
       </Header>
 
