@@ -3,11 +3,12 @@
     "name": "rentx",
     "slug": "rentx",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "bundleIdentifier": "org.name.rentx"
+    },
+    "splash": {
+      "image": "./assets/splash.png"
     }
   },
   "name": "rentx"

@@ -34,7 +34,7 @@ interface CarProps {
   endDate: string;
 }
 
-export default function MyCars() {
+export function MyCars() {
   const [cars, setCars] = useState<CarProps[]>([]);
   const [loading, setLoading] = useState(true);
 
