@@ -4,7 +4,7 @@ import { StatusBar } from "react-native";
 import { useTheme } from "styled-components";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
-import Button from "../../components/Button";
+import { Button } from "../../components/Button";
 import ArrowSvg from "../../assets/arrow.svg";
 import { BackButton } from "../../components/BackButton";
 import { getPlataformDate } from "../../utils/getPlataformDate";
