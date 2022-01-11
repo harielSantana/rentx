@@ -38,7 +38,7 @@ export function ImageSlider({ imageUrl }: Props) {
         keyExtractor={(key) => key}
         renderItem={({ item }) => (
           <CarImageWrapper>
-            <CarImage source={{ uri: imageUrl[0] }} resizeMode="contain" />
+            <CarImage source={{ uri: item }} resizeMode="contain" />
           </CarImageWrapper>
         )}
         horizontal
