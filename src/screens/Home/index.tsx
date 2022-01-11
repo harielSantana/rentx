@@ -20,7 +20,7 @@ import { api } from "../../services/api";
 
 import Logo from "../../assets/logo.svg";
 import { Car } from "../../components/Car";
-import { Load } from "../../components/Load";
+import { LoadAnimation } from "../../components/LoadAnimation";
 
 import { CarList, Container, Header, HeaderContent, TotalCars } from "./styles";
 
@@ -103,7 +103,7 @@ export function Home() {
       </Header>
 
       {loading ? (
-        <Load />
+        <LoadAnimation />
       ) : (
         <CarList
           data={cars}
