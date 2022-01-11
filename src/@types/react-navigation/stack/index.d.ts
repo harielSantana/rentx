@@ -1,9 +1,12 @@
 declare namespace ReactNavigation {
+  type CarDTO = import("../../../dtos/CarDTO").CarDTO;
   export interface RootParamList {
+    Splash: undefined;
     Home: undefined;
-    CarDetails: undefined;
-    Scheduling: undefined;
-    SchedulingDetails: undefined;
+    MyCars: undefined;
+    CarDetails: { car: CarDTO } | undefined;
+    Scheduling: { car: CarDTO } | undefined;
+    SchedulingDetails: { car: CarDTO; dates: string[] } | undefined;
     SchedulingComplete: undefined;
   }
 }

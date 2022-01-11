@@ -1,4 +1,4 @@
-export interface CarDTO {
+export type CarDTO = {
   id: string;
   brand: string;
   name: string;
@@ -14,4 +14,4 @@ export interface CarDTO {
     name: string;
   }[];
   photos: string[];
-}
+};
