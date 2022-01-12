@@ -4,6 +4,7 @@ declare namespace ReactNavigation {
     Splash: undefined;
     SignIn: undefined;
     SignUpFirstStep: undefined;
+    SignUpSecondStep: undefined;
     Home: undefined;
     MyCars: undefined;
     CarDetails: { car: CarDTO } | undefined;
