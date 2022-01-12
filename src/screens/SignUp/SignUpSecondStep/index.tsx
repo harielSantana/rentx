@@ -26,13 +26,13 @@ import {
   Title,
 } from "./styles";
 
-interface Params {
+export type ISignUpSecondStepParams = {
   user: {
     name: string;
     email: string;
     driverLicense: string;
   };
-}
+};
 
 export function SignUpSecondStep() {
   const [password, setPassword] = useState("");
@@ -41,7 +41,7 @@ export function SignUpSecondStep() {
   const route = useRoute();
   const theme = useTheme();
 
-  const { user } = route.params as Params;
+  const { user } = route.params as ISignUpSecondStepParams;
 
   function handleBack() {
     navigation.goBack();
