@@ -2,6 +2,8 @@ declare namespace ReactNavigation {
   type CarDTO = import("../../../dtos/CarDTO").CarDTO;
   export interface RootParamList {
     Splash: undefined;
+    SignIn: undefined;
+    SignUpFirstStep: undefined;
     Home: undefined;
     MyCars: undefined;
     CarDetails: { car: CarDTO } | undefined;
