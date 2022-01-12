@@ -49,13 +49,18 @@ export function SignUpSecondStep() {
 
   function handleRegister() {
     if (!password || !passwordConfirm) {
-      Alert.alert("Informe a senha e a confirmação dela");
+      return Alert.alert("Informe a senha e a confirmação dela");
     }
     if (password != passwordConfirm) {
-      Alert.alert("As senhas não coincidem");
+      return Alert.alert("As senhas não coincidem");
     }
 
     //Enviar para API
+    navigation.navigate("Confirmation", {
+      nextScreenRoute: "SignIn",
+      title: "Conta Criada!",
+      message: `Agora é só fazer login\ne aproveitar`,
+    });
   }
 
   return (
